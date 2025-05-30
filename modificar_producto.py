@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     print(event)
 
     # Obtener datos del body
-    body = json.loads(event['body'])
+    body = event['body']
     tenant_id = body['tenant_id']
     producto_id = body['producto_id']
     nuevo_nombre = body['nombre']  # Campo a modificar
